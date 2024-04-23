@@ -33,3 +33,45 @@ h2 {
 #algum-title {
     border-bottom: 4px solid orangered;
 }
+
+/* nome de cores */
+.color-name {
+    color: green;
+}
+
+/* hexadecimal */
+
+.hex {
+    color: #363636;
+}
+
+/* RGB */
+.rgb {
+    color: rgb(35, 121, 57);
+}
+
+/* RGBA */
+.rgba {
+    color: rgba(100, 199, 2845, 0.5);
+}
+
+/* HSL */
+.hsl {
+    color: hsl(100, 20%, 50%);
+}
+
+/* BACKGROUND COLOR */
+.back-color {
+    background-color: #363636;
+}
+
+/* BACKGROUND OPACIDADE */
+.bg-opacity {
+    background-color: #363636;
+    opacity: 0.3;
+}
+.bg-opacity-2 {
+    background-color: #273c5c;
+    color: #161515;
+    opacity: 0.5;
+}
