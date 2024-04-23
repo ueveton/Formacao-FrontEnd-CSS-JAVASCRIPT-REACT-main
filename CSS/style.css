@@ -1,4 +1,8 @@
-p {
-    color: bisque;
-    background: #010108;
+/* 4 - external*/
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
 }
