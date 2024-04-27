@@ -55,4 +55,7 @@ section {
     text-transform: uppercase;
     background-color: #273c5c;
     color: #2d910f;
+    outline-color: black;
+    margin: 2px;
+    border-radius: 5px 5px 5px 5px;
 }
