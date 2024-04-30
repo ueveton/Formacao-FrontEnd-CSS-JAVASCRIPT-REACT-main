@@ -59,3 +59,18 @@ section {
     margin: 2px;
     border-radius: 5px 5px 5px 5px;
 }
+
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    background-color: #940a0a;
+    border: 1px solid blue;
+    position: fixed;
+    top: 88vh;
+    right: 5vh;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+}

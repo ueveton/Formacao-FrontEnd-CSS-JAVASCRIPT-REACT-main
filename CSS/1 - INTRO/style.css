@@ -386,6 +386,11 @@ h2 {
     right: 5vh;
 }
 
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+}
+
 /* position sticky */
 .sticky {
     width: 10vw;

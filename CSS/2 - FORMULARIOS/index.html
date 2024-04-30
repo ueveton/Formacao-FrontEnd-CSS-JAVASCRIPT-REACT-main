@@ -8,5 +8,178 @@
 </head>
 <body>
     <h1>Formularios</h1>
+
+    <!-- 1 - CRIANDO FORMULARIOS -->
+    <form action="" method="">
+        <div>
+            <label for="">Nome:</label>
+            <input type="text">
+        </div>
+    </form>
+
+    <!-- 2 - Atributo -->
+    <div>
+        <label>Curso:</label>
+        <input type="text" name="age">
+    </div>
+
+    <!-- 3 Atributo Label -->
+    <div>
+        <label for="age">Idade:</label>
+        <input type="text" name="age">
+    </div>
+
+    <!-- 5 - Select -->
+    <div>
+        <label for="job">Selecione o Curso</label>
+        <select name="job">
+            <option value="SI">Sistema da Informação</option>
+            <option value="CC">Ciencia da Computação</option>
+            <option value="FE">Front End</option>
+        </select>
+    </div>
+
+    <!-- 6 - Selected -->
+    <div>
+        <label for="contract">Você Leu os termos do contrato</label>
+        <select name="contract">
+            <option value="sim">SIM</option>
+            <option value="nao" selected>NÃO</option>
+        </select>
+    </div>
+
+    <!-- 7 - Multipla Seleção -->
+    <div>
+        <label for="itens">Selecione os itens desejado</label>
+        <select name="itens" multiple>
+            <option value="arroz">Arroz</option>
+            <option value="feijao">Feijão</option>
+            <option value="oleo">oleo</option>
+            <option value="sal">Sal</option>
+        </select>
+    </div>
+
+    <!-- 8 - Text Area -->
+    <div>
+        <label for="conment">Comentario:</label>
+        <textarea name="conment" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- 9 - Fildset e legend -->
+    <div>
+        <fieldset>
+            <legend>Preencha as suas informações</legend>
+            <label for="firstname">Nome:</label>
+            <input type="text" name="firstname">
+            <label for="lastname">Sobrenome:</label>
+            <input type="text" name="lastname">
+        </fieldset>
+    </div>
+
+    <!-- 10 - Datalist -->
+    <div>
+        <label for="flavor">Escolha o sabor</label>
+        <input type="text" name="flavor" list="flavors">
+
+        <datalist id="flavors">
+            <option value="baunilha"></option>
+            <option value="chocolate"></option>
+        </datalist>
+    </div>
+
+    <!-- 11 - Password -->
+    <div>
+        <label for="password">Digite a sua senha:</label>
+        <input type="password" name="password" id="">
+    </div>
+
+    <!-- 13 - Radio -->
+    <div>
+        <label for="car_model">Escolha o modelo do seu carro</label>
+        <div class="radio">
+            <input type="radio" name="car_model" value="Fiesta-Rocan-10">
+            <label for="Fiesta-Rocan-10">Fieta Rocan 1.0</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="car_model" value="hb20-10">
+            <label for="hb20-10">HB 20</label>
+        </div>
+    </div>
+
+    <!-- 14 - checkbox -->
+    <div>
+        <label for="optionals">Opccionais do carro</label>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="big_tires">
+            <label for="big_tires">Pneus Grandes</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="turbo_enginer">
+            <label for="big_tires">Motor Turbo</label>
+        </div>
+    </div>
+
+    <!-- 15 - date -->
+    <div>
+        <label for="birthday">Data de nascimento</label>
+        <input type="date" name="birthday">
+    </div>
+
+    <!-- 16 - uploadfile -->
+    <div>
+        <label for="img">Insira a sua imagem</label>
+        <input type="file" name="img">
+    </div>
+
+    <!-- 17 - number -->
+    <div>
+        <label for="salary">Quanto voce esta ganhando no momento</label>
+        <input type="number" name="salary">
+    </div>
+
+    <!-- 18 - email -->
+    <div>
+        <label for="email">Seu e-mail</label>
+        <input type="email" name="email">
+    </div>
+
+    <!-- 19 - value -->
+    <div>
+        <label for="value">Digita algum valor</label>
+        <input type="text" value="Este eo meu valor" name="value">
+    </div>
+
+    <!-- 20 disable -->
+    <div>
+        <p>Tente mudar o meu valor</p>
+        <input type="text" value="Não precisa preencher" disabled >
+    </div>
+
+    <!-- 21 Placehold -->
+    <div>
+        <label for="currentjob">Digite sua profição</label>
+        <input type="text" name="currentjob" placeholder="No que voce esta trabalhando no momento?">
+    </div>
+
+    <!-- 22 Required -->
+    <div>
+        <label for="birthyear">Ano de nascimento</label>
+        <input type="text" placeholder="Digite o ano em que voce nasceu" required>
+    </div>
+
+    <!-- 12 - Reset -->
+    <input type="reset" value="Limpar">
+
+    <!-- 4 - Submit -->
+    <input type="submit" value="Enviar">
+
+    <!-- FOOTER - PAGINA HOME -->
+    <div class="fixed">
+        <span>
+            <a href="../../index.html">
+                Clique aqui para voltar ao menu principal
+            </a>
+        </span>
+    </div>
 </body>
 </html>

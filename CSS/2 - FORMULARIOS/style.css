@@ -2,3 +2,35 @@ h1 {
     background-color: blue;
     color: bisque;
 }
+
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    background-color: #55c908;
+    border: 1px solid blue;
+    position: fixed;
+    top: 88vh;
+    right: 5vh;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+    align-items: center;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+div input, div label {
+    display: block;
+}
+
+.radio label, .radio input, .radio span {
+    display: inline-block;
+}
