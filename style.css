@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(/IMG/program-background.jpg);
+    background-image: url(./IMG/program-background.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -28,7 +28,7 @@ h1 {
     padding: 10px auto;
     border: 1px solid gray;
     border-radius: 5px;
-    width: 350px;
+    width: 450px;
     height: auto;
     background-color: var(--bg-color);
     color: #678c99;
@@ -70,3 +70,15 @@ h1 {
     font-style: oblique;
 }
 
+.container-introducion {
+    position: relative;
+    display: inline-flex;
+}
+
+.introducion {
+    width: 205px;
+    text-align: center;
+    border: 1px solid #678c99;
+    margin: 2px;
+    text-transform: uppercase;
+}
