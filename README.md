@@ -17,6 +17,12 @@
             <li>
                 <h4>JAVASCRIPT</h4>
             </li>
+            <li>
+                <h4>REACT</h4>
+            </li>
+            <li>
+                <h4>TYPESCRIPT</h4>
+            </li>
         </ul>
     </h4>
 </div>
