@@ -5,7 +5,7 @@
     Curso de formação front-end fornecida pela Udemy e ministrada pela Hora de Codar
     </h2>
     <h4>
-    Este curso tem a finalidade de torna a pessoa epecializada em front-end, as tecnologia que baseasse ne curso são.
+    Este curso tem a finalidade de torna a pessoa epecializada em front-end, as tecnologia que são abordadas nesse é.
     <h2>🛠 Tecnologias</h2>
         <ul>
             <li>
