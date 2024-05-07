@@ -298,6 +298,28 @@ footer {
     margin: 50px 0 100px;
 }
 
+/* fixed */
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    background-color: #34454e;
+    border: 1px solid #263238;
+    position: fixed;
+    top: 85vh;
+    right: 5vh;
+    padding: 5px;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fixed:hover {
+    background-color: #2cc76a;
+}
+
 /* responsividade */
 /* small laptops a partirde 1100px */
 @media (max-width: 1100px) {
