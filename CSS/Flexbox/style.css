@@ -1,3 +1,202 @@
-h2 {
-    color: aqua;
+body {
+    padding: 20px;
+}
+
+/* 1 flex */
+.flex {
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* 2 colunn */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* flex wrap */
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+    text-align: center;
+}
+
+/* justify content */
+.center, .space-around, .space-between, .end {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box, .space-around .box, .space-between .box, .end .box {
+    width: 120px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
+}
+
+/* align-itens */
+.align-center, .flex-end, .strech {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box, .flex-end .box, .strech .box {
+    width: 80px;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.strech {
+    align-items: stretch;
+}
+
+.strech .box {
+    height: auto;
+}
+
+/* gap */
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box {
+    width: 32%;
+}
+
+/* order */
+.order {
+    display: flex;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
+
+/* grow */
+.grow {
+    display: flex;
+}
+
+.grow .box {
+    flex: 1;
+}
+
+.grow .big {
+    flex: 2;
+}
+
+/* basis */
+.basis {
+    display: flex;
+}
+
+.basis .box {
+    flex-basis: 60px;
+}
+
+.basis .big {
+    flex-grow: 1;
+}
+
+/* shrink */
+.shrink {
+    display: flex;
+}
+
+.shrink .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+}
+
+/* flex shorthand */
+.shorthand {
+    display: flex;
+}
+
+.shorthand .box {
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different {
+    flex: 3 1 400px;
+}
+
+/* alinhamento */
+.auto-alignment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid yellowgreen;
+}
+
+.auto-alignment .different {
+    align-self: center;
+}
+
+/* fixed */
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    background-color: #55c908;
+    border: 1px solid blue;
+    position: fixed;
+    top: 88vh;
+    right: 5vh;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+    align-items: center;
 }
