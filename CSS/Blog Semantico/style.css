@@ -133,3 +133,23 @@ a:hover {
         flex-wrap: wrap;
     }
 }
+
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(201, 201, 201, 0.5);
+    border: 1px solid #fff;
+    border-radius: 9px;
+    position: fixed;
+    top: 88vh;
+    right: 5vh;
+    text-align: center;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+}
