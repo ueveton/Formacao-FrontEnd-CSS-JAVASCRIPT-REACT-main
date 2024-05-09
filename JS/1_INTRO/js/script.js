@@ -1,0 +1,1 @@
+console.log("Executando em arquivo externo!")
