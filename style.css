@@ -46,6 +46,8 @@ h1 {
 .intro {
     padding: 6px;
     border-bottom: 1px dashed rgba(43, 35, 35, 0.2);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .intro h2 {
