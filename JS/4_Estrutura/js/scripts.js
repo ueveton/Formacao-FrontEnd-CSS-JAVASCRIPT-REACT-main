@@ -160,3 +160,89 @@ if (age < 18) {
 }
 
 // 10 while
+let p = 0;
+
+while (p < 10 ) {
+    console.log(`Repetindo ${p}`);
+    p = p + 1;
+}
+//console.log("loop infinito");
+
+// let x = 10;
+// while (x > 5) {
+//     console.log(`Imprimindo infinito ${x}`);
+// }
+
+// 11 - do while
+let x = 10;
+
+do {
+    console.log(`Valor de x: ${x}`);
+    x--
+} while (x > 1);
+
+// 12 - For
+for ( let i = 0; i < 10; i++ ) {    
+    console.log("Repetindo algo ...")
+}
+
+let y = 10;
+for (y; y > 0; y = y - 1) {
+    console.log(`O y está diminuindo: ${y}`);
+}
+
+console.log("for com tabuada")
+
+for (let i = 0; i < 11; i++) {
+    console.log("7 x " + i + " = " + 7 * i);
+}
+
+// 13 - identação
+for (let u = 0; u < 11; u++){
+    if (u * 2 > 10) {
+        console.log(`Maior que ${u}`);
+    } else {
+        if (u / 2 ===0) {
+            console.log("deu 0");
+        }
+    }
+}
+
+// 14 - break
+for (let g = 20; g > 10; g--) {
+    console.log (`O valor de g é ${g}`);
+    if (g === 15) {
+        console.log("O g é 15")
+        break;
+    }
+}
+
+// 15 - continue
+for (let s = 0; s < 10; s++) {
+    // operador de resto = %
+    if (s % 2 ===0) {
+        console.log("Numero par!");
+        continue;
+    }
+    console.log(s);
+}
+
+// 16 - Switch
+const job = "Advogado";
+
+switch (job) {
+    case "Programador":
+        console.log("Programador");
+        break;
+    case "Advogado":
+        console.log("Advogado");
+        break;
+    case "Engenheiro":
+        console.log("Engenheiro");
+        break;
+    case "Contabilidade":
+        console.log("Contabilidade");
+        break;
+    default:
+        console.log("Profissão não encontrada");
+}
