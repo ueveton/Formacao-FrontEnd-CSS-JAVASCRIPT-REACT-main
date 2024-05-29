@@ -81,3 +81,104 @@ console.log(car);
 
 // 7 - objetos +
 console.log("----- 7 - objetos + -----");
+const obj = {
+    a: "teste",
+    b: true,
+};
+
+console.log(obj instanceof Object);
+
+const obj2 = {
+    c: []
+}
+
+Object.assign(obj2, obj);
+console.log(obj2);
+console.log(obj);
+
+// 8 - Conhecendo objetos
+console.log("----- 8 - Conhecendo objetos -----");
+console.log(Object.keys(obj));
+console.log(Object.keys(obj2));
+console.log(Object.keys(car));
+
+console.log(Object.entries(car));
+
+// 9 - Mutability
+console.log("----- 9 - Mutability -----");
+
+const a = {
+    name: "Heitor",
+}
+const b = a;
+console.log(a);
+console.log(b);
+console.log(a === b);
+a.age = 34;
+console.log(a);
+console.log(b);
+
+console.log("deletando age b");
+delete b.age;
+console.log(a);
+console.log(b);
+
+// 10 - Loops em arrays
+console.log("----- 10 - Loops em arrays -----");
+console.log("Listar Usuarios");
+
+const user = [
+    "Heitor",
+    "Ueveton",
+    "Carol",
+    "Matheus",
+]
+
+for (let i = 0; i < user.length; i++) {
+    console.log(`Listadando usuareos ${user[i]}`);
+}
+
+console.log("Listar Carros");
+const cars = [
+    brand = "Toyota",
+    brand = "VW",
+    brand = "Ford",
+    brand = "Chevrolet",
+]
+
+for (let i = 0; i <cars.length; i++) {
+    console.log(`Listando carros ${cars[i]}`);
+}
+
+const cars2 = [
+    brand = "Toyota","VW","Ford","Chevrolet",
+    model = "Corrola","Fusca","Fusion","Astra",
+]
+
+for (let i = 0; i <cars2.length; i++) {
+    console.log(`Listando carros ${cars2[i]}`);
+}
+
+// 11 - Push e Pop
+console.log("----- 11 - Push e Pop -----");
+console.log("PUSH - add itens ao fim do array");
+console.log("POP - remove itens ao fim do array");
+
+const array = ["a", "b", "c"];
+console.log(`const array com a b c(array)`);
+array.push("d");
+console.log("Array add push d");
+console.log(array);
+console.log(array.length);
+console.log("Array remove pop");
+array.pop();
+console.log(array);
+
+console.log("Remover item c e exibindo o item removido");
+const itemRemovido = array.pop();
+
+console.log(itemRemovido);
+console.log(array);
+console.log("Add mais itens: h, f, o");
+ array.push("h", "f", "o");
+ console.log(array);
