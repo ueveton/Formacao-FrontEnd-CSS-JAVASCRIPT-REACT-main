@@ -42,11 +42,13 @@ li {
     padding-bottom: 10px;
     font-weight: bold;
     list-style: none;
+    height: 40px;
 }
 li a:hover {
     cursor: pointer;
     color: #161515;
 }
+
 /* responsividade */
 @media (max-width: 450px)  {
     p {
