@@ -18,8 +18,6 @@ function loadQrCode (){
     formBtn.innerText ="Codigo gerado!";
 };
 
-function remove
-
 formBtn.addEventListener("click", () => {
     generatorQrCode()
 });
@@ -32,6 +30,7 @@ formInput.addEventListener("keydown", (e) => {
 
 formInput.addEventListener("keyup", () => {
     if(!formInput.value){
-        
+        classContainer.classList.remove("active")
+        formBtn.innerText ="Gerar QR Code!";
     }
 })
