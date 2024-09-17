@@ -7,9 +7,24 @@
     <title>AXIOS</title>
     <link rel="shortcut icon" href="img/js.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="js/global.js"></script> -->
+    <script src="js/custon.js"></script>
+    <script src="js/intercepto.js"></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <h1>AXIOS</h1>
+    <h2>Insira um novo post:</h2>
+    <form action="" id="post-form">
+        <div>
+            <input type="text" id="title" placeholder="Digite o titulo">
+        </div>
+        <div>
+            <textarea name="" id="body"></textarea>
+        </div>
+        <input type="submit" value="Criar Post">
+    </form>
+    <div id="user-container"></div>
     <!-- fixed -->
     <div class="fixed">
         <span>
@@ -18,6 +33,5 @@
             </a>
         </span>
     </div>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
