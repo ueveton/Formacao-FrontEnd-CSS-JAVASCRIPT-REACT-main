@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(205, 215, 224);
+}
+
+/* fixed */
+.fixed {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(201, 201, 201, 0.5);
+    border: 1px solid #fff;
+    border-radius: 9px;
+    position: fixed;
+    top: 88vh;
+    right: 5vh;
+    text-align: center;
+    padding: 2px;
+}
+
+.fixed a {
+    text-decoration: none;
+    color: #161515;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
