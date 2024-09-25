@@ -10,6 +10,8 @@ body {
     background-image: url(../img/todo-list.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 button {
