@@ -27,9 +27,24 @@ const cars = [
 
 // 12 fragment
 import Fragment from './components/Fragment';
+import { Children } from 'react';
+import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import { useState } from 'react';
+import Message from './components/Message';
+import  { ChangeMessage } from './components/ChangeMessage';
 
 function App() {
 
+  // 14 - funcao em props
+  function showMessage() {
+    console.log("Evento do compomente pai")
+  };
+  // 15 - state lift
+  const [message, setMessage] = useState("");
+  const handleMessage = (msg) =>{
+    setMessage(msg);
+  };
   return (
     <>
       <div className='App' style={{paddingBottom: "500px"}}>
@@ -62,6 +77,18 @@ function App() {
         ))}
         {/* {12 fragment} */}
         <Fragment />
+        {/* {13 children} */}
+        <Container>
+          <p>Alguma coisa</p>
+          <div>
+            <h2>teste</h2>
+            <p>Meu container</p>
+          </div>
+        </Container>
+        <ExecuteFunction myFunction={showMessage}/>
+        {/* {15 mensagem} */}
+        <Message msg={message} />
+        <ChangeMessage handleMessage={handleMessage} />
       </div>
     </>
   )
