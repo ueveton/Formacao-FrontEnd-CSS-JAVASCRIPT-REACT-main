@@ -1,0 +1,30 @@
+@font-face {
+    font-family: RobotoMono;
+    src: url('../../public/Fonts/Roboto-Thin.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'RobotoMono', monospace;
+}
+.geral {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));
+}
+h2 {
+    font-size: 1.8rem;
+}
+.calcular {
+    display: grid;
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 25%);
+}
