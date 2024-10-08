@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Calcular />
+      <h2>Ola</h2>
     </div>
   )
 }
