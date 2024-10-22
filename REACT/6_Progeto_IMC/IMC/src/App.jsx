@@ -2,7 +2,7 @@ import './App.css'
 import { ImcCalc } from './Components/ImcCalc'
 import { ImcTable } from './Components/ImcTable'
 import { useState } from 'react'
-import { data } from './data/data'
+import {data} from './data/data.js'
 
 function App() {
   const calcImc = (e, height, width) => {
@@ -13,7 +13,14 @@ function App() {
     const heightfloat = +height.replace(",", ".")
 
     const imcResult = (widthFloat /(heightfloat * heightfloat)).toFixed(1)
-    setImc(imcResult)
+    setImc(imcResult);
+
+    data.forEach((item) => {
+      if (imcResult >= item.min ** imcResult <= item.max) {
+        setInfo(item.info)
+        setInfoClass(item.infoClass)
+      }
+    })
   }
 
   const [imc, setImc] = useState("");
@@ -23,7 +30,14 @@ function App() {
   return (
     <>
       <div className='container'>
-        {!imc ? <ImcCalc calcImc={calcImc} /> : <ImcTable data={data} />}
+        {!imc ? 
+          <ImcCalc calcImc={calcImc} /> 
+            : 
+          <ImcTable data={data}
+            imc={imc}
+            info={info}
+            infoClass={infoClass}/>
+        }
       </div>
     </>
   )

@@ -16,3 +16,7 @@ button:hover {
 #clear-btn {
     background-color: #444;
 }
+
+#back-btn {
+    align-self: center;
+}
