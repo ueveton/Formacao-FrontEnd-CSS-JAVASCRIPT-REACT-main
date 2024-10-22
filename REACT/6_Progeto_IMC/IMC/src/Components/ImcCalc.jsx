@@ -3,9 +3,23 @@ import { Button } from './Button';
 import { useState } from 'react';
 import './ImcCalc.css'
 
-export const ImcCalc = () => {
+export const ImcCalc = ( { calcImc }) => {
     const [height, setHeight] = useState("");
     const [width, setWidth] = useState("");
+
+    const validDigits = (text) => {
+        return text.replace(/[^0-9,]/g, "")
+    }
+
+    const handleHeightChange = (e) => {
+        const updateDigits = validDigits(e.target.value);
+        setHeight(updateDigits)
+    }
+
+    const handleWidthChange = (e) => {
+        const updateDigits = validDigits(e.target.value);
+        setWidth(updateDigits)
+    }
 
     const clearForm = (e) => {
         e.preventDefault();
@@ -25,7 +39,7 @@ export const ImcCalc = () => {
                             name="height" 
                             id="height" 
                             placeholder='Exemplo 1,75'
-                            onChange={(e) => setHeight(e.target.value)}
+                            onChange={(e) => handleHeightChange(e)}
                             value={height}
                         />
                     </div>
@@ -36,14 +50,22 @@ export const ImcCalc = () => {
                             name="weight" 
                             id="weight" 
                             placeholder='Exemplo 70.5' 
-                            onChange={(e) => setWidth(e.target.value)}
+                            onChange={(e) => handleWidthChange(e)}
                             value={width}
                         />
                     </div>
                 </div>
                 <div className="action-control">
-                    <Button id="calc-btn" text="Calcular" />
-                    <Button id="clear-btn" text="Limpar" action={clearForm}/>
+                    <Button 
+                        id="calc-btn" 
+                        text="Calcular" 
+                        action={(e) => calcImc(e, height, width) }
+                    />
+                    <Button 
+                        id="clear-btn" 
+                        text="Limpar" 
+                        action={clearForm}
+                    />
                     
                 </div>
             </form>
