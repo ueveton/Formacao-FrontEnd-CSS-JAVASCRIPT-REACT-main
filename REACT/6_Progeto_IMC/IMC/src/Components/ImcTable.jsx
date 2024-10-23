@@ -6,7 +6,7 @@ export const ImcTable = ( {data, imc, info, infoClass}) => {
     return (
         <div id='result-container'>
             <p id='imc-number'>
-                Seu IMC: <span className='infoClass'>{imc}</span>
+                Seu IMC: <span className={infoClass}>{imc}</span>
             </p>
             <p id="imc-info">
                 Situação atual:
