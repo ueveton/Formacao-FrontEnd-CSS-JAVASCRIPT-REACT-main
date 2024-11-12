@@ -20,6 +20,23 @@ function App() {
   const [name, setName] = useState("")
   const [price, setPrice] = useState("")
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const product ={
+      name,
+      price,
+    };
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(product),
+    });
+    console.log(product)
+  }
+
   return (
     <div className='App'>
       <h1>Http em React</h1>
@@ -33,14 +50,20 @@ function App() {
       </ul>
       {/* 2 - Enviando dados */}
       <div className="add-product">
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>
             <span>Nome:</span>
-            <input type="text" value={name} onChange={(e)=> setName(e.target.value)} />
+            <input type="text" 
+              value={name} 
+              onChange={(e)=> setName(e.target.value)} 
+            />
           </label>
           <label>
             <span>Preço:</span>
-            <input type="text" value={price} onChange={(e)=> setPrice(e.target.value)} />
+            <input type="text" 
+              value={price} 
+              onChange={(e)=> setPrice(e.target.value)} 
+            />
           </label>
           <input type="submit" value="Enviar" />
         </form>

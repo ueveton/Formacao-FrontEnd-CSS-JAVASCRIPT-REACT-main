@@ -1,20 +1,29 @@
 {
-    "products": [
-        {
-            "name": "Capa de chuva",
-            "price": "50.50",
-            "id": 5
-        },
-        {
-            "name": "Teclado",
-            "price": "1100.50",
-            "id": 6
-        },
-        {
-            "name": "Poltrona",
-            "price": "520.80",
-            "id": 7
-        }
-
-    ]
+  "products": [
+    {
+      "name": "Capa de chuva",
+      "price": "50.50",
+      "id": "5"
+    },
+    {
+      "name": "Teclado",
+      "price": "1100.50",
+      "id": "6"
+    },
+    {
+      "name": "Poltrona",
+      "price": "520.80",
+      "id": "7"
+    },
+    {
+      "id": "ab2f",
+      "name": "NOTEBOOK",
+      "price": "3700"
+    },
+    {
+      "id": "d1a0",
+      "name": "Gabinete",
+      "price": "2800.99"
+    }
+  ]
 }
