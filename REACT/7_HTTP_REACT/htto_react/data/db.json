@@ -1,3 +1,20 @@
 {
-    "products": []
+    "products": [
+        {
+            "name": "Capa de chuva",
+            "price": "50.50",
+            "id": 5
+        },
+        {
+            "name": "Teclado",
+            "price": "1100.50",
+            "id": 6
+        },
+        {
+            "name": "Poltrona",
+            "price": "520.80",
+            "id": 7
+        }
+
+    ]
 }
