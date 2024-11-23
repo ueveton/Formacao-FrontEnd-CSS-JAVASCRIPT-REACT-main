@@ -24,6 +24,11 @@
       "id": "d1a0",
       "name": "Gabinete",
       "price": "2800.99"
+    },
+    {
+      "id": "fcb3",
+      "name": "carregando",
+      "price": "20"
     }
   ]
 }
