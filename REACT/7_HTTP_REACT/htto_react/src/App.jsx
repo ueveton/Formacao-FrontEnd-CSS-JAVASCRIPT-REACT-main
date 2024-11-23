@@ -8,7 +8,7 @@ function App() {
   // 1 - Resgatando dados
   const [products, setProducts] = useState([])
   //4 custon hooks
-  const {data: itens} = useFetch(url)
+  const {data: itens, httpConfig, loading, error} = useFetch(url)
   // useEffect(()=> {
   //   async function getData(){
   //     const res = await fetch(url);
@@ -24,28 +24,37 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const product ={
       name,
       price,
     };
+    //5 refatorano post
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(product),
-    });
-    console.log(product)
-    // 3 carregamento dimanico
-    const addedProduct = await res.json()
-    setProducts((prevProducts) => [...prevProducts, addedProduct])
+    httpConfig(product, "POST")
+
+
+    // const res = await fetch(url, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(product),
+    // });
+    // console.log(product)
+    // // 3 carregamento dimanico
+    // const addedProduct = await res.json()
+    // setProducts((prevProducts) => [...prevProducts, addedProduct])
   }
 
 
   return (
     <div className='App'>
       <h1>Http em React</h1>
+      {/* {6 loading} */}
+      {loading && <p>Carregando</p>}
+      {/* {7 tratando erros} */}
+      {error && <p>{error}</p>}
       {/* {1 - resgate de dados } */}
       <ul>
         {itens && itens.map((products) => (
@@ -71,7 +80,10 @@ function App() {
               onChange={(e)=> setPrice(e.target.value)} 
             />
           </label>
-          <input type="submit" value="Enviar" />
+          {/* <input type="submit" value="Enviar" /> */}
+          {/* {7 loading post} */}
+          {loading && <input type="submit" disabled value="Aguarde o envio dos dados" />}
+          {!loading && <input type="submit" value="Enviar" />}
         </form>
       </div>
     </div>

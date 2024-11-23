@@ -29,6 +29,16 @@
       "id": "fcb3",
       "name": "carregando",
       "price": "20"
+    },
+    {
+      "id": "c94f",
+      "name": "refatorando",
+      "price": "5"
+    },
+    {
+      "id": "daa4",
+      "name": "teste",
+      "price": "1"
     }
   ]
 }
